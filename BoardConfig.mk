@@ -24,7 +24,7 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
 TARGET_PREBUILT_KERNEL := device/rockchip/rk3368a/prebuilt/kernel
-BOARD_PREBUILT_DTBIMAGE_DIR := device/rockchip/rk3368a/prebuilt/dtb
+BOARD_PREBUILT_DTBIMAGE_DIR := device/rockchip/rk3368a/prebuilt/dtbs
 # Not sure why, but we need to set this on the common tree
 # TARGET_PREBUILT_RESOURCE := device/rockchip/rk3368a/prebuilt/second
 PRODUCT_KERNEL_DTS ?= rk3368-tablet
