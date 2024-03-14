@@ -60,6 +60,7 @@ done
 
 source build/envsetup.sh >/dev/null
 TARGET_PRODUCT=`get_build_var TARGET_PRODUCT`
+TARGET_PREBUILT_RESOURCE=`get_build_var TARGET_PREBUILT_RESOURCE`
 
 #set jdk version
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -110,7 +111,7 @@ fi
 fi
 
 echo "package resoure.img with charger images"
-cd u-boot && ./scripts/pack_resource.sh ../kernel/resource.img && cp resource.img ../kernel/resource.img && cd -
+cd u-boot && ./scripts/pack_resource.sh "../$TARGET_PREBUILT_RESOURCE" && cp resource.img "../$TARGET_PREBUILT_RESOURCE" && cd -
 
 # build android
 if [ "$BUILD_ANDROID" = true ] ; then

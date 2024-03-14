@@ -15,11 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rk3368a_Android10/rk3368a_Android10.mk \
-    $(LOCAL_DIR)/rk3368a_qgo/rk3368a_qgo.mk \
+    $(LOCAL_DIR)/rk3368a_Android10/lineage_rk3368a_Android10.mk \
+    $(LOCAL_DIR)/rk3368a_qgo/lineage_rk3368a_qgo.mk \
 
 COMMON_LUNCH_CHOICES := \
-    rk3368a_Android10-userdebug \
-    rk3368a_Android10-user \
-    rk3368a_qgo-userdebug \
-    rk3368a_qgo-user \
+    lineage_rk3368a_Android10-userdebug \
+    lineage_rk3368a_Android10-user \
+    lineage_rk3368a_qgo-userdebug \
+    lineage_rk3368a_qgo-user \
