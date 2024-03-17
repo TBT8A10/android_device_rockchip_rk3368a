@@ -116,3 +116,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.build.shutdown_timeout=0 \
                 persist.enable_task_snapshots=false \
                 ro.vendor.sdkversion = $(CURRENT_SDK_VERSION)
+
+# TWRP
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/twrp.flags:recovery/root/system/etc/twrp.flags

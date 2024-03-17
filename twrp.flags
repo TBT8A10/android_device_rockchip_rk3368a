@@ -1,0 +1,3 @@
+/uboot          emmc        /dev/block/by-name/uboot            flags=backup=1;flashimg
+/recovery	    emmc	    /dev/block/by-name/recovery         flags=backup=1;flashimg
+/vbmeta	        emmc	    /dev/block/by-name/vbmeta           flags=backup=1;flashimg
